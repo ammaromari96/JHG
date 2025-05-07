@@ -1,0 +1,91 @@
+﻿@model JHGF.Models.Hotel
+
+@{
+    ViewData["Title"] = "Hotel Payment";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/HotelPayment.css" />
+}
+
+<!-- Booking Section -->
+<div class="booking-section">
+    <h3 class="booking-title">Book This Hotel</h3>
+
+    <form asp-action="HotelPayment" asp-controller="Booking" method="post">
+        <input type="hidden" name="HotelId" value="@Model.Id" />
+
+        <div class="booking-form-group">
+            <label class="booking-label">Check-in Date</label>
+            <input type="date" class="booking-input" name="CheckIn" required />
+        </div>
+
+        <div class="booking-form-group">
+            <label class="booking-label">Check-out Date</label>
+            <input type="date" class="booking-input" name="CheckOut" required />
+        </div>
+
+        <div class="booking-form-row">
+            <div class="booking-form-col">
+                <div class="booking-form-group">
+                    <label class="booking-label">Adults</label>
+                    <select class="booking-select" name="Adults" required>
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+            </div>
+            <div class="booking-form-col">
+                <div class="booking-form-group">
+                    <label class="booking-label">Children</label>
+                    <select class="booking-select" name="Children">
+                        <option value="0">0 Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Section (visual only, not real processing) -->
+        <div class="payment-section">
+            <h4 class="payment-title">Payment Method</h4>
+            <div class="payment-method active">
+                <i class="fab fa-cc-visa"></i>
+                <span>Visa</span>
+            </div>
+
+            <div class="payment-details">
+                <div class="booking-form-group">
+                    <label class="booking-label">Card Number</label>
+                    <input type="text" class="booking-input" placeholder="1234 5678 9012 3456" required />
+                </div>
+
+                <div class="booking-form-row">
+                    <div class="booking-form-col">
+                        <div class="booking-form-group">
+                            <label class="booking-label">Expiration Date</label>
+                            <input type="text" class="booking-input" placeholder="MM/YY" required />
+                        </div>
+                    </div>
+                    <div class="booking-form-col">
+                        <div class="booking-form-group">
+                            <label class="booking-label">CVV</label>
+                            <input type="text" class="booking-input" placeholder="123" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-group">
+                    <label class="booking-label">Cardholder Name</label>
+                    <input type="text" class="booking-input" placeholder="John Doe" required />
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="book-now-btn">Book Now</button>
+    </form>
+</div>

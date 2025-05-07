@@ -1,0 +1,38 @@
+﻿@model JHGF.Models.User
+
+@{
+    Layout = "~/Views/Shared/userLayout.cshtml";
+    ViewData["Title"] = "My Profile";
+    ViewData["ActivePage"] = "Profile";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">My Profile</h1>
+        <p class="content-subtitle">View and manage your account information</p>
+    </div>
+    <a asp-action="EditProfile" class="btn btn-primary">Edit Profile</a>
+</div>
+
+<div class="profile-view">
+    <div class="profile-header">
+        <img src="@(!string.IsNullOrEmpty(Model.ProfilePic) ? Model.ProfilePic : "https://randomuser.me/api/portraits/men/32.jpg")" alt="Profile" class="profile-avatar" />
+        <div class="profile-details">
+            <h2 class="profile-name-large">@Model.Name</h2>
+            <div class="profile-email">@Model.Email</div>
+            <div class="profile-role">@Model.Role</div>
+        </div>
+    </div>
+
+    <div class="profile-info-grid">
+        <div class="info-item">
+            <div class="info-label">Phone</div>
+            <div class="info-value">@Model.Phone</div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-label">Date of Birth</div>
+            <div class="info-value">@Model.DateOfBirth?.ToString("dd MMMM yyyy")</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@model List<JHGF.Models.Wishlist>
+
+@{
+    Layout = "~/Views/Shared/userLayout.cshtml";
+    ViewData["Title"] = "Wishlist";
+    ViewData["ActivePage"] = "Wishlist";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">My Wishlist</h1>
+        <p class="content-subtitle">Your saved travel experiences</p>
+    </div>
+
+    <form method="get" asp-action="Wishlist">
+        <select name="type" onchange="this.form.submit()" class="form-select" style="width: 200px;">
+            <option value="All" selected>All</option>
+            <option value="Tour" selected="@(ViewBag.Type == "Tour")">Tour</option>
+            <option value="Package" selected="@(ViewBag.Type == "Package")">Package</option>
+            <option value="Hotel" selected="@(ViewBag.Type == "Hotel")">Hotel</option>
+        </select>
+    </form>
+</div>
+
+<div class="wishlist">
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            var title = item.Tour?.TourName ?? item.Package?.PackageName ?? item.Hotel?.HotelName ?? "Unknown";
+            var location = item.Tour?.Location ?? item.Package?.Location ?? item.Hotel?.Location ?? "-";
+            var price = item.Tour?.Price ?? item.Package?.Price ?? item.Hotel?.DeluxeRoomPrice ?? 0;
+
+            var image = item.Tour?.Image1
+            ?? item.Package?.Image1
+            ?? item.Hotel?.HotelImage1
+            ?? "https://via.placeholder.com/300";
+
+            var bookUrl = "#";
+            if (item.TourId != null)
+            {
+                bookUrl = Url.Action("ToursDetails", "Booking", new { id = item.TourId });
+            }
+            else if (item.PackageId != null)
+            {
+                bookUrl = Url.Action("PackagesDetails", "Booking", new { id = item.PackageId });
+            }
+            else if (item.HotelId != null)
+            {
+                bookUrl = Url.Action("HotelDetails", "Booking", new { id = item.HotelId });
+            }
+
+            <div class="wishlist-card">
+                <div class="wishlist-image" style="background-image: url('@image');"></div>
+                <div class="wishlist-content">
+                    <h3 class="wishlist-title">@title</h3>
+                    <div class="wishlist-location">
+                        <i class="fas fa-map-marker-alt"></i> @location
+                    </div>
+                    <div class="wishlist-price">$@price per person</div>
+                    <div class="wishlist-actions">
+                        <a href="@bookUrl" class="wishlist-btn book">Book Now</a>
+                        <form method="post" asp-action="RemoveFromWishlist" asp-route-id="@item.Id">
+                            <button type="submit" class="wishlist-btn remove">Remove</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p style="text-align:center;">No items in your wishlist yet.</p>
+    }
+</div>

@@ -1,0 +1,158 @@
+﻿@model List<JHGF.Models.Tour>
+
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tour.css" />
+}
+
+<!-- Inject specific JS for this page -->
+@section Scripts {
+    <script src="~/js/tour.js"></script>
+}
+
+
+
+
+<div class="container">
+    <aside class="sidebar">
+        <form method="get" asp-controller="Booking" asp-action="FilterTours">
+            <div class="filter-container">
+                <div class="filter-header">
+                    <h3 class="filter-title">Filter Tours</h3>
+                    <button class="reset-btn" type="submit" name="reset" value="true">Reset All</button>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Search</h4>
+                    <div class="filter-option">
+                        <input type="text" class="filter-input" name="search" value="@ViewBag.Search" placeholder="Tour name or keyword">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Price Range</h4>
+                    <div class="filter-option">
+                        <div class="price-range-container">
+                            <div class="price-range-display">
+                                <span>
+                                    Max Price:
+                                    <span id="price-display" class="price-range-value">
+                                        $@ViewBag.MaxPrice ?? 200
+                                    </span>
+                                </span>
+                            </div>
+                            <input type="range" name="maxPrice" min="50" max="500" value="@ViewBag.MaxPrice ?? 200" class="price-slider" id="price-slider" oninput="document.getElementById('price-display').innerText = '$' + this.value;" />
+                            <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                                <span style="font-size: 12px; color: #777;">$50</span>
+                                <span style="font-size: 12px; color: #777;">$500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Duration</h4>
+                    <div class="checkbox-group">
+                        @{
+                            var selectedDurations = ViewBag.Durations as List<int> ?? new List<int>();
+                        }
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="durations" value="1" @(selectedDurations.Contains(1) ? "checked" : "") /> 1 Day
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="durations" value="2" @(selectedDurations.Contains(2) ? "checked" : "") /> 2 Days
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="durations" value="3" @(selectedDurations.Contains(3) ? "checked" : "") /> 3-5 Days
+                        </label>
+                        
+                    </div>
+                </div>
+
+                <button class="apply-btn" type="submit">
+                    <i class="fas fa-filter"></i> Apply Filters
+                </button>
+            </div>
+        </form>
+
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3 class="filter-title">Need help?</h3>
+            </div>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                Our travel experts can help you choose the perfect tour for your Jordanian adventure.
+            </p>
+            <button class="apply-btn" style="background-color: var(--secondary-color);">
+                <i class="fas fa-phone-alt"></i> Contact Us
+            </button>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Discover Jordan's Best Tours</h1>
+            <p class="page-subtitle">Explore ancient wonders, breathtaking landscapes, and rich culture with our expertly guided tours</p>
+        </div>
+
+        <div class="results-count">Showing @Model.Count tours</div>
+
+        <div class="tour-grid">
+            @foreach (var tour in Model)
+            {
+                <div class="tour-card"
+                     data-destination="@tour.Location.ToLower()"
+                     data-type="cultural,historical"
+                     data-price="120"
+                     data-duration="@tour.DurationDays"
+                     data-features="guide,transport,entrance">
+
+                    <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                        <input type="hidden" name="TourId" value="@tour.Id" />
+                        <button type="submit" class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </form>
+
+
+                    <div class="tour-image" style="background-image: url('@tour.Image1');">
+                        <div class="tour-badge">FEATURED</div>
+                        <div class="tour-rating"><i class="fas fa-star"></i> 4.9</div>
+                    </div>
+
+                    <div class="tour-content">
+                        <h3 class="tour-name">@tour.TourName</h3>
+                        <div class="tour-location">
+                            <i class="fas fa-map-marker-alt"></i> @tour.Location
+                        </div>
+                        <div class="tour-duration">
+                            <i class="fas fa-clock"></i> @tour.DurationDays Day@(tour.DurationDays > 1 ? "s" : "")
+                        </div>
+                        <div class="tour-price">
+                            $@tour.Price <span>per person</span>
+                        </div>
+
+                        <p class="tour-description">@tour.SmallDescription</p>
+                        <div class="tour-highlights">
+                            <span class="highlight"><i class="fas fa-user-tie"></i> Guide</span>
+                            <span class="highlight"><i class="fas fa-bus"></i> Transport</span>
+                            <span class="highlight"><i class="fas fa-ticket-alt"></i> Entrance</span>
+                        </div>
+                        <a asp-action="ToursDetails" asp-route-id="@tour.Id" class="tour-btn">
+                            <i class="fas fa-calendar-check"></i> Book Now
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="pagination">
+            <div class="page-item"><i class="fas fa-chevron-left"></i></div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </main>
+</div>

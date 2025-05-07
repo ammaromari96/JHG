@@ -1,0 +1,106 @@
+﻿
+@model JHGF.Models.Hotel
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Edit Hotel";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Edit Hotel</h1>
+        <p class="content-subtitle">Update the details of an existing hotel</p>
+    </div>
+</div>
+
+<div class="form-container">
+    <div class="form-header">
+        <h3>Edit Hotel Information</h3>
+    </div>
+
+    <form asp-action="EditHotel" asp-controller="Admin" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="form-body">
+            <!-- Basic Hotel Information -->
+            <div class="form-group">
+                <label>Hotel Name</label>
+                <input type="text" name="HotelName" class="form-control" value="@Model.HotelName" required />
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" name="Location" class="form-control" value="@Model.Location" required />
+            </div>
+            <div class="form-group">
+                <label>Starting Price ($)</label>
+                <input type="number" name="Price" class="form-control" value="@Model.Price" required />
+            </div>
+            <div class="form-group">
+                <label>Rating (1-5)</label>
+                <input type="number" name="Rating" class="form-control" value="@Model.Rating" min="1" max="5" required />
+            </div>
+            <div class="form-group">
+                <label>Distance from City (km)</label>
+                <input type="number" name="DistanceFromCity" class="form-control" value="@Model.DistanceFromCity" />
+            </div>
+            <div class="form-group">
+                <label>Check-in Time</label>
+                <input type="time" name="CheckInTime" class="form-control" value="@Model.CheckInTime" />
+            </div>
+            <div class="form-group">
+                <label>Check-out Time</label>
+                <input type="time" name="CheckOutTime" class="form-control" value="@Model.CheckOutTime" />
+            </div>
+
+            <!-- Descriptions -->
+            <div class="form-group">
+                <label>Short Description</label>
+                <textarea name="SmallDescription" class="form-control">@Model.SmallDescription</textarea>
+            </div>
+            <div class="form-group">
+                <label>Full Description</label>
+                <textarea name="FullDescription" class="form-control">@Model.FullDescription</textarea>
+            </div>
+
+            <!-- Amenities -->
+            <div class="form-group">
+                <label>Amenities</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="FreeWifi" @(Model.FreeWifi == true ? "checked" : "") />
+                    <label class="form-check-label">Free WiFi</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="ParkingAvailable" @(Model.ParkingAvailable == true ? "checked" : "") />
+                    <label class="form-check-label">Parking Available</label>
+                </div>
+            </div>
+
+            <!-- Hotel Images -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="file" name="HotelImage1" class="form-control mb-2" accept="image/*" />
+                        <small class="text-muted">Current: @Model.HotelImage1</small>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" name="HotelImage2" class="form-control mb-2" accept="image/*" />
+                        <small class="text-muted">Current: @Model.HotelImage2</small>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" name="HotelImage3" class="form-control mb-2" accept="image/*" />
+                        <small class="text-muted">Current: @Model.HotelImage3</small>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" name="HotelImage4" class="form-control mb-2" accept="image/*" />
+                        <small class="text-muted">Current: @Model.HotelImage4</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Form Footer -->
+            <div class="form-footer">
+                <a asp-action="ViewHotels" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-primary">Update Hotel</button>
+            </div>
+        </div>
+    </form>
+</div>

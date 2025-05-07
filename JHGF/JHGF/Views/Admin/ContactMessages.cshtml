@@ -1,0 +1,44 @@
+﻿@model List<JHGF.Models.ContactU>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Contact Messages";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Contact Messages</h1>
+        <p class="content-subtitle">View and manage customer inquiries</p>
+    </div>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <i class="fas fa-check-circle"></i>
+        @TempData["Success"]
+    </div>
+}
+
+@foreach (var message in Model)
+{
+    <div class="message-card">
+        <div class="message-header">
+            <div>
+                <div class="message-name">@message.FullName</div>
+                <div class="message-email">@message.Email</div>
+                <div class="message-phone">@message.PhoneNumber</div>
+                <div class="message-subject"><strong>Subject:</strong> @message.Subject</div>
+            </div>
+        </div>
+        <div class="message-content">
+            @message.Message
+        </div>
+        <div class="card-actions">
+            <form asp-action="DeleteMessage" asp-route-id="@message.Id" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger" style="padding: 5px 10px;">
+                    <i class="fas fa-trash"></i> Delete
+                </button>
+            </form>
+        </div>
+    </div>
+}

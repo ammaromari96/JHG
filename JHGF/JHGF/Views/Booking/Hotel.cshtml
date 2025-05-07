@@ -1,0 +1,159 @@
+﻿@model List<JHGF.Models.Hotel>
+
+@{
+    ViewData["Title"] = "Hotels";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/hotel.css" />
+}
+@section Scripts {
+    <link href="~/js/hotel.js" />
+}
+
+
+<div class="container">
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+        <form method="get" asp-controller="Booking" asp-action="Hotels">
+            <div class="filter-container">
+                <div class="filter-header">
+                    <h3 class="filter-title">Filter Hotels</h3>
+                    <button class="reset-btn" type="submit" name="reset" value="true">Reset All</button>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Search</h4>
+                    <div class="filter-option">
+                        <input type="text" class="filter-input" name="search" placeholder="Hotel name or keyword" value="@ViewBag.Search" />
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Price Range</h4>
+                    <div class="filter-option">
+                        <div class="price-range-container">
+                            <div class="price-range-display">
+                                <span>
+                                    Max Price:
+                                    <span id="price-display" class="price-range-value">
+                                        $@ViewBag.MaxPrice ?? 250
+                                    </span>
+                                </span>
+                            </div>
+                            <input type="range" name="maxPrice" min="50" max="500" value="@ViewBag.MaxPrice ?? 250" class="price-slider" id="price-slider" oninput="document.getElementById('price-display').innerText = '$' + this.value;" />
+                            <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                                <span style="font-size: 12px; color: #777;">$50</span>
+                                <span style="font-size: 12px; color: #777;">$500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Amenities</h4>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="wifi" @(ViewBag.WifiChecked as bool? == true ? "checked" : "") class="amenity-checkbox" value="wifi"> Free WiFi
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="parking" @(ViewBag.ParkingChecked as bool? == true ? "checked" : "") class="amenity-checkbox" value="parking"> Free Parking
+                        </label>
+                    </div>
+                </div>
+
+                <button class="apply-btn" type="submit">
+                    <i class="fas fa-filter"></i> Apply Filters
+                </button>
+            </div>
+        </form>
+
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3 class="filter-title">Need help?</h3>
+            </div>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                Our travel experts are available 24/7 to help you plan your perfect Jordanian getaway.
+            </p>
+            <button class="apply-btn" style="background-color: var(--secondary-color);">
+                <i class="fas fa-phone-alt"></i> Contact Us
+            </button>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Discover Jordan's Finest Hotels</h1>
+            <p class="page-subtitle">Experience the perfect blend of luxury and authentic Jordanian hospitality</p>
+        </div>
+
+        <div class="results-count">Showing @Model.Count() hotels</div>
+
+        <div class="hotel-grid">
+            @foreach (var hotel in Model)
+            {
+                var amenitiesList = new List<string>();
+                if (hotel.FreeWifi == true) { amenitiesList.Add("wifi"); }
+                if (hotel.ParkingAvailable == true) { amenitiesList.Add("parking"); }
+
+                <div class="hotel-card"
+                     data-location="@hotel.Location"
+                     data-price="@hotel.Price"
+                     data-rating="@hotel.Rating"
+                     data-amenities="@string.Join(",", amenitiesList)">
+                    <form method="post" asp-action="AddToWishlist" asp-controller="User">
+                        <input type="hidden" name="HotelId" value="@hotel.Id" />
+                        <button type="submit" class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </form>
+
+                    <div class="hotel-image" style="background-image: url('@hotel.HotelImage1');">
+                        <div class="hotel-badge">RECOMMENDED</div>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star"></i> @hotel.Rating
+                        </div>
+                    </div>
+
+                    <div class="hotel-content">
+                        <h3 class="hotel-name">@hotel.HotelName</h3>
+                        <div class="hotel-location">
+                            <i class="fas fa-map-marker-alt"></i> @hotel.Location
+                        </div>
+                        <div class="hotel-price">
+                            $@hotel.Price <span>per night</span>
+                        </div>
+                        <p class="hotel-description">@hotel.SmallDescription</p>
+                        <div class="hotel-amenities">
+                            @if (hotel.FreeWifi == true)
+                            {
+                                <span class="amenity"><i class="fas fa-wifi"></i> WiFi</span>
+                            }
+                            @if (hotel.ParkingAvailable == true)
+                            {
+                                <span class="amenity"><i class="fas fa-parking"></i> Parking</span>
+                            }
+                        </div>
+                        <a asp-controller="Booking" asp-action="HotelDetails" asp-route-id="@hotel.Id" class="hotel-btn">
+                            <i class="fas fa-calendar-check"></i> Book Now
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="pagination">
+            <div class="page-item"><i class="fas fa-chevron-left"></i></div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </main>
+</div>
+
+
+    
+

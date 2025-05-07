@@ -1,0 +1,206 @@
+﻿/* ===== Navbar Styles ===== */
+.jnav-bar {
+    background-color: black !important;
+    color: var(--text);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.jnav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.jnav-logo-icon {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.jnav-logo-text {
+    font-weight: 700;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #48dbfb, #1dd1a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.jnav-links {
+    display: flex;
+    gap: 25px;
+}
+
+    .jnav-links a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        padding: 5px 0;
+    }
+
+        .jnav-links a:hover {
+            color: var(--primary);
+        }
+
+        .jnav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .jnav-links a:hover::after {
+            width: 100%;
+        }
+
+.jnav-auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.jnav-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .jnav-profile:hover {
+        color: var(--primary);
+    }
+
+.jnav-profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.jnav-profile-name {
+    font-weight: 500;
+}
+
+.jnav-login-btn {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+    .jnav-login-btn:hover {
+        background: var(--primary);
+        color: var(--dark);
+    }
+
+/* Shopping Cart Styles */
+.jnav-cart-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jnav-cart-icon {
+    font-size: 1.3rem;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.jnav-cart-container:hover .jnav-cart-icon {
+    color: var(--primary);
+}
+
+.jnav-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.jnav-mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 992px) {
+    .jnav-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jnav-bar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .jnav-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .jnav-mobile-menu-btn {
+        display: block;
+    }
+
+    .jnav-links,
+    .jnav-auth {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+        .jnav-links.active,
+        .jnav-auth.active {
+            display: flex;
+        }
+
+    .jnav-profile {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .jnav-cart-container {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}

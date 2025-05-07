@@ -1,0 +1,224 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Add Tour";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Add New Tour</h1>
+        <p class="content-subtitle">Fill in the details to add a new tour</p>
+    </div>
+</div>
+
+<div class="alert alert-success" id="addTourSuccessAlert" style="display: none;">
+    <i class="fas fa-check-circle"></i>
+    <span id="addTourSuccessText">Tour added successfully!</span>
+</div>
+
+<div class="form-container">
+    <div class="form-header">
+        <h3>Tour Information</h3>
+    </div>
+
+    <form id="addTourForm" method="post" enctype="multipart/form-data">
+
+        <div class="form-body">
+            <!-- Basic Tour Information -->
+            <div class="form-group">
+                <label for="tourName">Tour Name</label>
+                <input type="text" id="tourName" name="TourName" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tourLocation">Location</label>
+                <input type="text" id="tourLocation" name="Location" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tourDurationDays">Duration (Days)</label>
+                <input type="number" id="tourDurationDays" name="DurationDays" class="form-control" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tourPrice">Price ($)</label>
+                <input type="number" id="tourPrice" name="Price" class="form-control" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="tourSmallDescription">Short Description</label>
+                <textarea id="tourSmallDescription" name="SmallDescription" class="form-control" required></textarea>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="tourFullDescription">Full Description</label>
+                <textarea id="tourFullDescription" name="FullDescription" class="form-control" required></textarea>
+            </div>
+
+            <!-- Tour Images -->
+            <div class="form-group">
+                <label>Tour Images (Upload at least one image)</label>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="file" id="tourImage1" name="Image1" class="form-control mb-2" accept="image/*" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" id="tourImage2" name="Image2" class="form-control mb-2" accept="image/*">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" id="tourImage3" name="Image3" class="form-control mb-2" accept="image/*">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" id="tourImage4" name="Image4" class="form-control mb-2" accept="image/*">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Itinerary Sections -->
+            <div class="form-section-header">
+                <h4>Itinerary Details</h4>
+                <p>Add up to 8 itinerary items for your tour</p>
+            </div>
+
+            <!-- Itinerary Item 1 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 1</h5>
+                <div class="form-group">
+                    <label for="itineraryTime1">Time</label>
+                    <input type="text" id="itineraryTime1" name="ItineraryTime1" class="form-control" placeholder="e.g. 09:00 AM">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle1">Title</label>
+                    <input type="text" id="itineraryTitle1" name="ItineraryTitle1" class="form-control" placeholder="e.g. Visit Petra">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc1">Description</label>
+                    <textarea id="itineraryDesc1" name="ItineraryDesc1" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 2 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 2</h5>
+                <div class="form-group">
+                    <label for="itineraryTime2">Time</label>
+                    <input type="text" id="itineraryTime2" name="ItineraryTime2" class="form-control" placeholder="e.g. 12:00 PM">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle2">Title</label>
+                    <input type="text" id="itineraryTitle2" name="ItineraryTitle2" class="form-control" placeholder="e.g. Lunch Break">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc2">Description</label>
+                    <textarea id="itineraryDesc2" name="ItineraryDesc2" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 3 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 3</h5>
+                <div class="form-group">
+                    <label for="itineraryTime3">Time</label>
+                    <input type="text" id="itineraryTime3" name="ItineraryTime3" class="form-control" placeholder="e.g. 01:30 PM">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle3">Title</label>
+                    <input type="text" id="itineraryTitle3" name="ItineraryTitle3" class="form-control" placeholder="e.g. Siq Walk">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc3">Description</label>
+                    <textarea id="itineraryDesc3" name="ItineraryDesc3" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 4 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 4</h5>
+                <div class="form-group">
+                    <label for="itineraryTime4">Time</label>
+                    <input type="text" id="itineraryTime4" name="ItineraryTime4" class="form-control" placeholder="e.g. 03:00 PM">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle4">Title</label>
+                    <input type="text" id="itineraryTitle4" name="ItineraryTitle4" class="form-control" placeholder="e.g. Treasury Viewing">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc4">Description</label>
+                    <textarea id="itineraryDesc4" name="ItineraryDesc4" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 5 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 5</h5>
+                <div class="form-group">
+                    <label for="itineraryTime5">Time</label>
+                    <input type="text" id="itineraryTime5" name="ItineraryTime5" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle5">Title</label>
+                    <input type="text" id="itineraryTitle5" name="ItineraryTitle5" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc5">Description</label>
+                    <textarea id="itineraryDesc5" name="ItineraryDesc5" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 6 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 6</h5>
+                <div class="form-group">
+                    <label for="itineraryTime6">Time</label>
+                    <input type="text" id="itineraryTime6" name="ItineraryTime6" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle6">Title</label>
+                    <input type="text" id="itineraryTitle6" name="ItineraryTitle6" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc6">Description</label>
+                    <textarea id="itineraryDesc6" name="ItineraryDesc6" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 7 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 7</h5>
+                <div class="form-group">
+                    <label for="itineraryTime7">Time</label>
+                    <input type="text" id="itineraryTime7" name="ItineraryTime7" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle7">Title</label>
+                    <input type="text" id="itineraryTitle7" name="ItineraryTitle7" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc7">Description</label>
+                    <textarea id="itineraryDesc7" name="ItineraryDesc7" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Itinerary Item 8 -->
+            <div class="itinerary-item">
+                <h5>Itinerary Item 8</h5>
+                <div class="form-group">
+                    <label for="itineraryTime8">Time</label>
+                    <input type="text" id="itineraryTime8" name="ItineraryTime8" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryTitle8">Title</label>
+                    <input type="text" id="itineraryTitle8" name="ItineraryTitle8" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="itineraryDesc8">Description</label>
+                    <textarea id="itineraryDesc8" name="ItineraryDesc8" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-footer">
+            <a asp-action="ViewTours" asp-controller="Admin" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Add Tour</button>
+        </div>
+    </form>
+</div>

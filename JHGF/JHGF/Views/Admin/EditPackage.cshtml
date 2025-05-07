@@ -1,0 +1,136 @@
+﻿@model JHGF.Models.Package
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Edit Package";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Edit Package</h1>
+        <p class="content-subtitle">Modify the travel package information below</p>
+    </div>
+</div>
+
+<div class="alert alert-success" id="editPackageSuccessAlert" style="display: none;">
+    <i class="fas fa-check-circle"></i>
+    <span id="editPackageSuccessText">Package updated successfully!</span>
+</div>
+
+<div class="form-container">
+    <div class="form-header">
+        <h3>Package Information</h3>
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-body">
+            <!-- Basic Info -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Package Name</label>
+                    <input type="text" name="PackageName" value="@Model.PackageName" class="form-control" required />
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Location</label>
+                    <input type="text" name="Location" value="@Model.Location" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label>Duration (Days)</label>
+                    <input type="number" name="DurationDays" value="@Model.DurationDays" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Price ($)</label>
+                    <input type="number" name="Price" value="@Model.Price" class="form-control" required />
+                </div>
+            </div>
+
+            <!-- Descriptions -->
+            <div class="form-group">
+                <label>Small Description</label>
+                <textarea name="SmallDescription" class="form-control" required>@Model.SmallDescription</textarea>
+            </div>
+            <div class="form-group full-width">
+                <label>Full Description</label>
+                <textarea name="FullDescription" class="form-control" rows="5" required>@Model.FullDescription</textarea>
+            </div>
+
+            <!-- Itinerary -->
+            @for (int i = 1; i <= 8; i++)
+            {
+                <div class="itinerary-item card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Itinerary Item @i</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Time</label>
+                                <input type="text" name="ItineraryTime@i" class="form-control"
+                                       value="@(typeof(JHGF.Models.Package).GetProperty($"ItineraryTime{i}")?.GetValue(Model)?.ToString())" />
+                            </div>
+                            <div class="form-group col-md-9">
+                                <label>Title</label>
+                                <input type="text" name="ItineraryTitle@i" class="form-control"
+                                       value="@(typeof(JHGF.Models.Package).GetProperty($"ItineraryTitle{i}")?.GetValue(Model)?.ToString())" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea name="ItineraryDesc@i" class="form-control"
+                                      rows="2">@((string?)typeof(JHGF.Models.Package).GetProperty($"ItineraryDesc{i}")?.GetValue(Model))</textarea>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!-- Images Without Loop -->
+            <div class="images-section mt-4">
+                <h4 class="section-title">Package Images</h4>
+
+                <div class="form-group col-md-6">
+                    <label>Image 1</label>
+                    <input type="file" name="Image1" class="form-control" accept="image/*" />
+                    @if (!string.IsNullOrEmpty(Model.Image1))
+                    {
+                        <small class="text-muted">Current: <a href="@Model.Image1" target="_blank">@System.IO.Path.GetFileName(Model.Image1)</a></small>
+                    }
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Image 2</label>
+                    <input type="file" name="Image2" class="form-control" accept="image/*" />
+                    @if (!string.IsNullOrEmpty(Model.Image2))
+                    {
+                        <small class="text-muted">Current: <a href="@Model.Image2" target="_blank">@System.IO.Path.GetFileName(Model.Image2)</a></small>
+                    }
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Image 3</label>
+                    <input type="file" name="Image3" class="form-control" accept="image/*" />
+                    @if (!string.IsNullOrEmpty(Model.Image3))
+                    {
+                        <small class="text-muted">Current: <a href="@Model.Image3" target="_blank">@System.IO.Path.GetFileName(Model.Image3)</a></small>
+                    }
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Image 4</label>
+                    <input type="file" name="Image4" class="form-control" accept="image/*" />
+                    @if (!string.IsNullOrEmpty(Model.Image4))
+                    {
+                        <small class="text-muted">Current: <a href="@Model.Image4" target="_blank">@System.IO.Path.GetFileName(Model.Image4)</a></small>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="form-footer mt-4">
+            <a asp-action="ViewPackages" asp-controller="Admin" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Update Package</button>
+        </div>
+    </form>
+</div>

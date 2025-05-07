@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Custom Admin CSS -->
+    <link href="~/css/admin.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="profile-img" />
+            <div class="profile-info">
+                <div class="profile-name">Admin User</div>
+                <div class="profile-role">Administrator</div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="menu-title">Navigation</div>
+            <a asp-controller="Admin" asp-action="Dashboard" class="menu-item">
+                <i class="fas fa-tachometer-alt"></i> <span>Dashboard</span>
+            </a>
+
+            <div class="menu-title">Hotel Management</div>
+            <a asp-controller="Admin" asp-action="ViewHotels" class="menu-item">
+                <i class="fas fa-hotel"></i> <span>View Hotels</span>
+            </a>
+            <a asp-controller="Admin" asp-action="AddHotel" class="menu-item">
+                <i class="fas fa-plus-circle"></i> <span>Add Hotel</span>
+            </a>
+            <a asp-controller="Admin" asp-action="EditHotel" asp-route-id="1" class="menu-item">
+                <i class="fas fa-edit"></i> <span>Edit Hotel</span>
+            </a>
+
+            <div class="menu-title">Tour Management</div>
+            <a asp-controller="Admin" asp-action="ViewTours" class="menu-item">
+                <i class="fas fa-route"></i> <span>View Tours</span>
+            </a>
+            <a asp-controller="Admin" asp-action="AddTour" class="menu-item">
+                <i class="fas fa-plus-circle"></i> <span>Add Tour</span>
+            </a>
+            <a asp-controller="Admin" asp-action="EditTour" asp-route-id="1" class="menu-item">
+                <i class="fas fa-edit"></i> <span>Edit Tour</span>
+            </a>
+
+            <div class="menu-title">Package Management</div>
+            <a asp-controller="Admin" asp-action="ViewPackages" class="menu-item">
+                <i class="fas fa-suitcase"></i> <span>View Packages</span>
+            </a>
+            <a asp-controller="Admin" asp-action="AddPackage" class="menu-item">
+                <i class="fas fa-plus-circle"></i> <span>Add Package</span>
+            </a>
+            <a asp-controller="Admin" asp-action="EditPackage" asp-route-id="1" class="menu-item">
+                <i class="fas fa-edit"></i> <span>Edit Package</span>
+            </a>
+
+            <div class="menu-title">User Management</div>
+            <a asp-controller="Admin" asp-action="ViewUsers" class="menu-item">
+                <i class="fas fa-users"></i> <span>View Users</span>
+            </a>
+
+            <div class="menu-title">Messages</div>
+            <a asp-controller="Admin" asp-action="ContactMessages" class="menu-item">
+                <i class="fas fa-envelope"></i> <span>Contact Messages</span>
+                <span class="badge">5</span>
+            </a>
+
+            <div class="menu-title">Testimonials</div>
+            <a asp-controller="Admin" asp-action="Testimonial" class="menu-item">
+                <i class="fas fa-quote-left"></i> <span>Testimonials</span>
+                <span class="badge">3</span> 
+            </a>
+
+            <a asp-controller="Admin" asp-action="Logout" class="menu-item">
+                <i class="fas fa-sign-out-alt"></i> <span>Logout</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        @RenderBody()
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/admin.js"></script>
+</body>
+</html>

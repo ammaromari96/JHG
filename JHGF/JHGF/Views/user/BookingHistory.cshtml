@@ -1,0 +1,84 @@
+﻿@model List<JHGF.Models.Booking>
+
+@{
+    Layout = "~/Views/Shared/userLayout.cshtml";
+    ViewData["Title"] = "Booking History";
+    ViewData["ActivePage"] = "Bookings";
+    var currentFilter = ViewBag.Filter as string ?? "";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Booking History</h1>
+        <p class="content-subtitle">All your past and upcoming trips</p>
+    </div>
+</div>
+
+<!-- Filter Dropdown -->
+<form method="get" asp-action="BookingHistory" class="mb-4" style="max-width: 250px;">
+    <label for="filterType" class="form-label">Filter by Booking Type</label>
+    <select name="type" id="filterType" class="form-select" onchange="this.form.submit()">
+        <option value="" selected="@(string.IsNullOrEmpty(currentFilter) ? "selected" : null)">All</option>
+        <option value="Tour" selected="@(currentFilter == "Tour" ? "selected" : null)">Tour</option>
+        <option value="Package" selected="@(currentFilter == "Package" ? "selected" : null)">Package</option>
+        <option value="Hotel" selected="@(currentFilter == "Hotel" ? "selected" : null)">Hotel</option>
+    </select>
+</form>
+
+<!-- Alerts -->
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<!-- Booking Table -->
+<table class="booking-table">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Travelers</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var booking in Model)
+            {
+                var destination = booking.Tour?.TourName ?? booking.Package?.PackageName ?? booking.Hotel?.HotelName ?? "N/A";
+                var date = booking.CheckIn?.ToString("dd MMM yyyy") ?? "-";
+                var travelers = (booking.Adults ?? 0) + (booking.Children ?? 0);
+                var amount = booking.Payments?.FirstOrDefault()?.PaidAmount ?? 0;
+                var status = "Confirmed"; // You can update this if you add a BookingStatus column
+
+                <tr>
+                    <td>#JT-@booking.Id</td>
+                    <td>@destination</td>
+                    <td>@date</td>
+                    <td>@travelers</td>
+                    <td>$@amount</td>
+                    <td><span class="status confirmed">@status</span></td>
+                    <td>
+                        <button class="btn btn-secondary" style="padding: 5px 10px; font-size: 12px;">
+                            Details
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center">You have no bookings yet.</td>
+            </tr>
+        }
+    </tbody>
+</table>

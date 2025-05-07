@@ -1,0 +1,352 @@
+﻿@model JHGF.Models.Package
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/packagedetails.css" />
+}
+
+<!-- Inject specific JS for this page -->
+@section Scripts {
+    <script src="~/js/packagedetails.js"></script>
+}
+
+<style>
+    .review-form {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    }
+
+    .custom-slide {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+</style>
+
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-title">@Model.PackageName</h1>
+        <p class="page-subtitle">@Model.DurationDays-day package covering @Model.Location</p>
+    </div>
+
+    <div id="packageCarousel" class="carousel slide package-slider" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            @{
+                int slideIndex = 0;
+                if (!string.IsNullOrEmpty(Model.Image1))
+                {
+                    <button type="button" data-bs-target="#packageCarousel" data-bs-slide-to="@slideIndex" class="@(slideIndex == 0 ? "active" : "")" aria-current="@(slideIndex == 0 ? "true" : "false")" aria-label="Slide 1"></button>
+                    ;
+                    slideIndex++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image2))
+                {
+                    <button type="button" data-bs-target="#packageCarousel" data-bs-slide-to="@slideIndex" aria-label="Slide 2"></button>
+                    ;
+                    slideIndex++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image3))
+                {
+                    <button type="button" data-bs-target="#packageCarousel" data-bs-slide-to="@slideIndex" aria-label="Slide 3"></button>
+                    ;
+                    slideIndex++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image4))
+                {
+                    <button type="button" data-bs-target="#packageCarousel" data-bs-slide-to="@slideIndex" aria-label="Slide 4"></button>
+                    ;
+                }
+            }
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            @{
+                int index = 0;
+                if (!string.IsNullOrEmpty(Model.Image1))
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                        <div class="d-block w-100 custom-slide" style="background-image: url('@Model.Image1');"></div>
+                    </div>
+                    index++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image2))
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                        <div class="d-block w-100 custom-slide" style="background-image: url('@Model.Image2');"></div>
+                    </div>
+                    index++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image3))
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                        <div class="d-block w-100 custom-slide" style="background-image: url('@Model.Image3');"></div>
+                    </div>
+                    index++;
+                }
+                if (!string.IsNullOrEmpty(Model.Image4))
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                        <div class="d-block w-100 custom-slide" style="background-image: url('@Model.Image4');"></div>
+                    </div>
+                }
+            }
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#packageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#packageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Package Info -->
+    <div class="package-info">
+        <div class="package-description">
+            <h2 class="package-name">@Model.PackageName</h2>
+            <div class="package-price">$850 <span>per person</span></div>
+
+            <p class="package-text">@Model.SmallDescription</p>
+            <p class="package-text">@Model.FullDescription</p>
+
+            <!-- Static Highlights (you can make these dynamic later if needed) -->
+            <div class="package-highlights">
+                <h3 class="highlights-title">Package Highlights</h3>
+                <ul class="highlights-list">
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> Guided tour of Petra including the Treasury and Monastery</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> Overnight in a traditional Bedouin camp in Wadi Rum</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> Jeep safari and sunset viewing in Wadi Rum desert</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> Relaxation day at the Dead Sea with resort access</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> All transportation in comfortable air-conditioned vehicles</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> 4 nights accommodation (3-4 star hotels + desert camp)</li>
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> Daily breakfast and 3 dinners included</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div class="booking-section">
+            <h3 class="booking-title">Book This Package</h3>
+            <form asp-action="BookPackage" asp-controller="Booking" method="post">
+                <input type="hidden" name="PackageId" value="@Model.Id" />
+
+                <div class="booking-form-group">
+                    <label class="booking-label">Start Date</label>
+                    <input type="date" class="booking-input" name="StartDate" required />
+                </div>
+
+                <div class="booking-form-row">
+                    <div class="booking-form-col">
+                        <div class="booking-form-group">
+                            <label class="booking-label">Adults</label>
+                            <select class="booking-select" name="NumberOfAdults" required>
+                                <option value="1">1 Adult</option>
+                                <option value="2" selected>2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="booking-form-col">
+                        <div class="booking-form-group">
+                            <label class="booking-label">Children</label>
+                            <select class="booking-select" name="NumberOfChildren">
+                                <option value="0">0 Children</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Children</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h4 class="payment-title">Payment Method</h4>
+                    <div class="payment-method active">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Credit/Debit Card</span>
+                    </div>
+
+                    <div class="payment-details">
+                        <div class="booking-form-group">
+                            <label class="booking-label">Card Number</label>
+                            <input type="text" class="booking-input" placeholder="1234 5678 9012 3456" required />
+                        </div>
+
+                        <div class="booking-form-row">
+                            <div class="booking-form-col">
+                                <div class="booking-form-group">
+                                    <label class="booking-label">Expiration Date</label>
+                                    <input type="text" class="booking-input" placeholder="MM/YY" required />
+                                </div>
+                            </div>
+                            <div class="booking-form-col">
+                                <div class="booking-form-group">
+                                    <label class="booking-label">CVV</label>
+                                    <input type="text" class="booking-input" placeholder="123" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-form-group">
+                            <label class="booking-label">Cardholder Name</label>
+                            <input type="text" class="booking-input" placeholder="John Doe" required />
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="book-now-btn">Complete Booking</button>
+            </form>
+        </div>
+        </div>
+
+
+    <!-- Itinerary Section -->
+    <div class="itinerary-section">
+        <h2 class="section-title">Detailed Itinerary</h2>
+
+        @for (int i = 1; i <= 8; i++)
+        {
+            var timeProp = Model.GetType().GetProperty($"ItineraryTime{i}")?.GetValue(Model) as string;
+            var titleProp = Model.GetType().GetProperty($"ItineraryTitle{i}")?.GetValue(Model) as string;
+            var descProp = Model.GetType().GetProperty($"ItineraryDesc{i}")?.GetValue(Model) as string;
+
+
+            if (!string.IsNullOrWhiteSpace(titleProp) && !string.IsNullOrWhiteSpace(descProp))
+            {
+                <div class="itinerary-item">
+                    <div class="itinerary-day">Day @i</div>
+                    <div class="itinerary-content">
+                        <h3 class="itinerary-title">@titleProp</h3>
+                        <p class="itinerary-description">@descProp</p>
+                        @if (!string.IsNullOrWhiteSpace(timeProp))
+                        {
+                            <div class="itinerary-destination">
+                                <i class="fas fa-map-marker-alt"></i> @timeProp
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+
+    <!-- Inclusions Section -->
+    <div class="inclusions-section">
+        <h2 class="section-title">What's Included</h2>
+        <div class="inclusions-grid">
+            <div class="inclusion-item">
+                <i class="fas fa-hotel"></i>
+                <span>4 nights accommodation (3-4 star hotels + desert camp)</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-utensils"></i>
+                <span>Daily breakfast and 3 dinners</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-bus"></i>
+                <span>All transportation in air-conditioned vehicles</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Professional English-speaking guides</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-ticket-alt"></i>
+                <span>All entrance fees to sites mentioned</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-car"></i>
+                <span>Wadi Rum 4x4 jeep safari</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-campground"></i>
+                <span>Overnight in Wadi Rum desert camp</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>Dead Sea resort day pass</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-hiking"></i>
+                <span>Petra guided tour</span>
+            </div>
+            <div class="inclusion-item">
+                <i class="fas fa-hotel"></i>
+                <span>Hotel pickup/drop-off in Amman</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+        <h2 class="section-title">Customer Reviews</h2>
+
+        @if (Model.Reviews != null && Model.Reviews.Any())
+        {
+            foreach (var review in Model.Reviews)
+            {
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="review-author">@review.UserName</span>
+                    </div>
+                    <div class="review-stars">
+                        @for (int i = 0; i < review.Rating; i++)
+                        {
+                            <i class="fas fa-star"></i>
+                        }
+                    </div>
+                    <p class="review-content">@review.Comment</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p style="color: #777;">No reviews yet. Be the first to write one!</p>
+        }
+    </div>
+
+    <!-- Review Form -->
+    @if (Context.Session.GetString("UserId") != null)
+    {
+        <div class="review-form">
+            <h2 class="form-title">Write a Review</h2>
+
+            <form asp-action="SubmitReviewPackage" asp-controller="Booking" method="post">
+                <input type="hidden" name="PackageId" value="@Model.Id" />
+
+                <div class="form-group">
+                    <label class="form-label">Rating</label>
+                    <select class="form-select" name="Rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Your Review</label>
+                    <textarea class="form-textarea" name="Comment" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-review-btn">Submit Review</button>
+            </form>
+        </div>
+        
+    }
+    </div>

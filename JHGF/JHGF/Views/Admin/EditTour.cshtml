@@ -1,0 +1,147 @@
+﻿@model JHGF.Models.Tour
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Edit Tour";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Edit Tour</h1>
+        <p class="content-subtitle">Update the tour details below</p>
+    </div>
+</div>
+
+<div class="alert alert-success" id="editTourSuccessAlert" style="display: none;">
+    <i class="fas fa-check-circle"></i>
+    <span id="editTourSuccessText">Tour updated successfully!</span>
+</div>
+
+<div class="form-container">
+    <div class="form-header">
+        <h3>Tour Information</h3>
+    </div>
+
+    <form asp-action="EditTour" asp-controller="Admin" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="form-body">
+
+            <div class="form-group">
+                <label for="TourName">Tour Name</label>
+                <input type="text" name="TourName" class="form-control" value="@Model.TourName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Location">Location</label>
+                <input type="text" name="Location" class="form-control" value="@Model.Location" required />
+            </div>
+
+            <div class="form-group">
+                <label for="DurationDays">Duration (Days)</label>
+                <input type="number" name="DurationDays" class="form-control" value="@Model.DurationDays" min="1" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Price">Price ($)</label>
+                <input type="number" name="Price" class="form-control" value="@Model.Price" step="0.01" min="0" required />
+            </div>
+
+            <div class="form-group full-width">
+                <label for="SmallDescription">Short Description</label>
+                <textarea name="SmallDescription" class="form-control" required>@Model.SmallDescription</textarea>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="FullDescription">Full Description</label>
+                <textarea name="FullDescription" class="form-control" required>@Model.FullDescription</textarea>
+            </div>
+
+            <!-- Images -->
+            <div class="form-group">
+                <label>Tour Images</label>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="file" name="Image1" class="form-control mb-2" accept="image/*" />
+                        @if (!string.IsNullOrEmpty(Model.Image1))
+                        {
+                            <small class="text-muted">Current:</small>
+
+                            <br />
+                            <img src="@Model.Image1" width="100" class="img-thumbnail" />
+                        }
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="file" name="Image2" class="form-control mb-2" accept="image/*" />
+                        @if (!string.IsNullOrEmpty(Model.Image2))
+                        {
+                            <small class="text-muted">Current:</small>
+
+                            <br />
+                            <img src="@Model.Image2" width="100" class="img-thumbnail" />
+                        }
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="file" name="Image3" class="form-control mb-2" accept="image/*" />
+                        @if (!string.IsNullOrEmpty(Model.Image3))
+                        {
+                            <small class="text-muted">Current:</small>
+
+                            <br />
+                            <img src="@Model.Image3" width="100" class="img-thumbnail" />
+                        }
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="file" name="Image4" class="form-control mb-2" accept="image/*" />
+                        @if (!string.IsNullOrEmpty(Model.Image4))
+                        {
+                            <small class="text-muted">Current:</small>
+
+                            <br />
+                            <img src="@Model.Image4" width="100" class="img-thumbnail" />
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Itinerary Items -->
+            <div class="form-section-header">
+                <h4>Itinerary</h4>
+                <p>Modify itinerary stops</p>
+            </div>
+
+            @for (int i = 1; i <= 8; i++)
+            {
+                var time = typeof(JHGF.Models.Tour).GetProperty($"ItineraryTime{i}")?.GetValue(Model) as string ?? "";
+                var title = typeof(JHGF.Models.Tour).GetProperty($"ItineraryTitle{i}")?.GetValue(Model) as string ?? "";
+                var desc = typeof(JHGF.Models.Tour).GetProperty($"ItineraryDesc{i}")?.GetValue(Model) as string ?? "";
+
+                <div class="itinerary-item">
+                    <h5>Itinerary Item @i</h5>
+                    <div class="form-group">
+                        <label for="ItineraryTime@i">Time</label>
+                        <input type="text" name="ItineraryTime@i" class="form-control" value="@time" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ItineraryTitle@i">Title</label>
+                        <input type="text" name="ItineraryTitle@i" class="form-control" value="@title" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ItineraryDesc@i">Description</label>
+                        <textarea name="ItineraryDesc@i" class="form-control">@desc</textarea>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+
+        <div class="form-footer">
+            <a asp-action="ViewTours" asp-controller="Admin" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Update Tour</button>
+        </div>
+    </form>
+</div>

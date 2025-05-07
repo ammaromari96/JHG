@@ -1,0 +1,192 @@
+﻿@model JHGF.Models.ContactU
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/contactus.css" />
+}
+
+@section Scripts {
+    <script src="~/js/contactus.js"></script>
+}
+
+<style>
+    .navbar {
+        background-color: black !important;
+    }
+
+    .jhg-footer {
+        background-color: black !important;
+    }
+
+    .section-title {
+        font-size: 1.2rem !important;
+        margin-bottom: 20px !important;
+        position: relative !important;
+        padding-bottom: 10px !important;
+        color: white !important;
+    }
+
+    #sectioncon{
+        font-size: 5rem !important;
+
+    }
+</style>
+<!-- Contact Hero Section -->
+<section class="section-padding bg-gray">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title" id="sectioncon">Get In <span>Touch</span></h1>
+            <p class="section-subtitle">We're here to help you plan your perfect Jordanian adventure</p>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <i class="fas fa-envelope divider-icon"></i>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-form animate">
+                <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--dark);">Send Us a Message</h2>
+
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">@TempData["Success"]</div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["Error"]</div>
+                }
+
+                <form asp-action="contactus" asp-controller="Home" method="post">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input asp-for="FullName" class="form-control" required />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input asp-for="Email" class="form-control" required />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input asp-for="PhoneNumber" class="form-control" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <select asp-for="Subject" class="form-control" required>
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="booking">Booking Assistance</option>
+                            <option value="custom">Custom Tour Request</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your Message</label>
+                        <textarea asp-for="Message" class="form-control" required></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info animate delay-1">
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h4>Our Office</h4>
+                                <p>orange coding academy<br>Irbid, Jordan</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>
+                                    <a href="tel:+962791234567">+962 77 955 1587</a> (24/7)
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>
+                                    <a href="mailto:jordangemssuppurt@gmail.com">jordangemssuppurt@gmail.com</a><br>
+                               @*      <a href="mailto:bookings@jordantravelexperts.com">bookings@jordantravelexperts.com</a> *@
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>
+                                    Sunday-Thursday: 8:30 AM - 5:30 PM<br>
+                                    Friday-Saturday: Closed
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Emergency Contact</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-phone-alt" style="color: #ff6b6b;"></i>
+                            <div class="contact-text">
+                                <h4>24/7 Support</h4>
+                                <p><a href="tel:+962791234567">+962 77 955 1587</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-headset"></i>
+                            <div class="contact-text">
+                                <h4>Need Immediate Help?</h4>
+                                <p>Our emergency line is available for existing clients needing urgent assistance while traveling in Jordan.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container animate delay-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.302654986438!2d35.850887512726274!3d32.551580213445725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sen!2sjo!4v1744571864880!5m2!1sen!2sjo" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+    <div class="container">
+        <div class="section-header" style="color: white;">
+            <h2 class="section-title">Ready to Start Your <span>Journey</span>?</h2>
+            <p class="section-subtitle" style="color: #eee;">Contact us today to begin planning your unforgettable Jordan experience</p>
+            <div class="section-divider">
+                <span class="divider-line" style="background: linear-gradient(90deg, transparent, white, transparent);"></span>
+                <i class="fas fa-paper-plane divider-icon" style="color: white;"></i>
+                <span class="divider-line" style="background: linear-gradient(90deg, transparent, white, transparent);"></span>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#" class="submit-btn" style="display: inline-flex; align-items: center; padding: 16px 32px; font-size: 1.1rem;">
+                Get Started <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+            </a>
+        </div>
+    </div>
+</section>

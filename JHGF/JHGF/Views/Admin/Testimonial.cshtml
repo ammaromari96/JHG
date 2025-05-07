@@ -1,0 +1,259 @@
+﻿@model IEnumerable<JHGF.Models.Testimonial>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Testimonial ";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card-header {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        background-color: #f8f9fa;
+    }
+
+    .card-title {
+        margin: 0;
+        font-size: 1.25rem;
+        color: #333;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f8f9fa;
+        font-weight: 600;
+        color: #555;
+    }
+
+    tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .badge-pending {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .badge-approved {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .badge-rejected {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.2s;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .btn-warning {
+        background-color: #ffc107;
+        color: #000;
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+    .content-preview {
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .star-rating {
+        color: #ffc107;
+        font-size: 16px;
+    }
+
+        .star-rating .empty {
+            color: #ddd;
+        }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #777;
+        font-weight: bold;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #666;
+        font-size: 13px;
+    }
+
+</style>
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Manage Testimonials</h3>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Message</th>
+                        <th>Rating</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        @item.UserName?.Substring(0, 2).ToUpper()
+                                    </div>
+                                    <div>
+                                        <div>@item.UserName</div>
+                                        <div class="location">
+                                            <i class="fas fa-map-marker-alt"></i> @item.Location
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="content-preview">@item.Message</td>
+                            <td>
+                                <div class="star-rating">
+                                    @for (int i = 1; i <= item.Rating; i++)
+                                    {
+                                        <i class="fas fa-star"></i>
+                                    }
+                                    @for (int i = item.Rating.GetValueOrDefault() + 1; i <= 5; i++)
+                                    {
+                                        <i class="far fa-star empty"></i>
+                                    }
+                                </div>
+                            </td>
+                            <td>@item.Location</td>
+                            <td>
+                                @if (item.Status == "Approved")
+                                {
+                                    <span class="badge badge-approved">Approved</span>
+                                }
+                                else if (item.Status == "Rejected")
+                                {
+                                    <span class="badge badge-rejected">Rejected</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-pending">Pending</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <form asp-action="ApproveTestimonial" asp-route-id="@item.Id" method="post">
+                                        <button class="btn btn-success btn-sm"><i class="fas fa-check"></i> Accept</button>
+                                    </form>
+                                    <form asp-action="RejectTestimonial" asp-route-id="@item.Id" method="post">
+                                        <button class="btn btn-warning btn-sm"><i class="fas fa-times"></i> Reject</button>
+                                    </form>
+                                    <form asp-action="DeleteTestimonial" asp-route-id="@item.Id" method="post" onsubmit="return confirm('Are you sure?')">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Delete</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

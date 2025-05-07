@@ -1,0 +1,902 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\tours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\hoteldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\hoteldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\hotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\hotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\packagedetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\packagedetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\packagesdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\packagesdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\toursdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\toursdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\user\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\user\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\admin\\editpackage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\admin\\editpackage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\packages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\packages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\models\\package.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\models\\package.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\hotel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\hotel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\js\\hotel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\js\\hotel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\hoteldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\hoteldetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\forgetpassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\forgetpassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\booking\\hotelpayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\booking\\hotelpayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\js\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\js\\hoteldetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\js\\hoteldetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\admin\\edittour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\admin\\edittour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\admin\\edithotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\admin\\edithotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\admin\\viewhotels.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\admin\\viewhotels.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\admin\\addhotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\admin\\addhotel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\shared\\userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\shared\\userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\user\\bookinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\user\\bookinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\views\\home\\addtestimonial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\views\\home\\addtestimonial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\models\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\models\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|c:\\users\\ammar\\onedrive\\desktop\\new folder (8)\\jhgf\\jhgf\\wwwroot\\css\\aboutus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6CF23E7-724D-4558-A65C-41FEFEE64832}|JHGF\\JHGF.csproj|solutionrelative:jhgf\\wwwroot\\css\\aboutus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 27,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T08:56:34.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T20:31:26.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\login.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-24T20:25:48.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PackagesDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\PackagesDetails.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\PackagesDetails.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\PackagesDetails.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\PackagesDetails.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T19:39:02.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EditPackage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditPackage.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Admin\\EditPackage.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditPackage.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Admin\\EditPackage.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwHIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T19:18:34.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Package.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Package.cs",
+              "RelativeDocumentMoniker": "JHGF\\Models\\Package.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Package.cs",
+              "RelativeToolTip": "JHGF\\Models\\Package.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA1wFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T18:40:04.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Packages.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Packages.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\Packages.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Packages.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\Packages.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T18:16:42.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Tour.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Tour.cs",
+              "RelativeDocumentMoniker": "JHGF\\Models\\Tour.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Tour.cs",
+              "RelativeToolTip": "JHGF\\Models\\Tour.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA0wFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T18:07:51.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tours.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Tours.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\Tours.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Tours.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\Tours.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T17:58:47.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "hotel.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hotel.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\hotel.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hotel.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\hotel.css",
+              "ViewState": "AgIAAN8BAAAAAAAAAAAUwOoBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-24T09:18:07.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ToursDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\ToursDetails.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\ToursDetails.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\ToursDetails.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\ToursDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T08:33:38.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "hoteldetails.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hoteldetails.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\hoteldetails.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hoteldetails.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\hoteldetails.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-24T06:51:37.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ForgetPassword.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\ForgetPassword.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\ForgetPassword.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\ForgetPassword.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\ForgetPassword.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-24T06:25:55.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ForgetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\ForgetPassword.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\user\\ForgetPassword.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\ForgetPassword.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\user\\ForgetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T06:24:53.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "bootstrap.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAC6EQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:17:28.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AgIAAIQXAAAAAAAAAAAlwJMXAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-24T06:14:15.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "bootstrap-utilities.rtl.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAerwIAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:14.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "bootstrap-utilities.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABXrwIAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:14.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "bootstrap-reboot.rtl.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAahAEAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:13.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "bootstrap-reboot.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANhAEAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:11.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "bootstrap-grid.rtl.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACYyAIAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:07.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "bootstrap-grid.css.map",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "RelativeToolTip": "JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACUyAIAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T06:14:01.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HotelPayment.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\HotelPayment.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\HotelPayment.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\HotelPayment.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\HotelPayment.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T20:26:47.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\index.js",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\js\\index.js",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\index.js",
+              "RelativeToolTip": "JHGF\\wwwroot\\js\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-23T20:17:59.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "admin.js",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\admin.js",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\js\\admin.js",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\admin.js",
+              "RelativeToolTip": "JHGF\\wwwroot\\js\\admin.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-23T20:17:53.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Hotel.cs",
+              "RelativeDocumentMoniker": "JHGF\\Models\\Hotel.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\Hotel.cs",
+              "RelativeToolTip": "JHGF\\Models\\Hotel.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA0wFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:12:56.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "hotel.js",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hotel.js",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\js\\hotel.js",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hotel.js",
+              "RelativeToolTip": "JHGF\\wwwroot\\js\\hotel.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-23T20:11:27.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Program.cs",
+              "RelativeDocumentMoniker": "JHGF\\Program.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Program.cs",
+              "RelativeToolTip": "JHGF\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:26:50.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\appsettings.json",
+              "RelativeDocumentMoniker": "JHGF\\appsettings.json",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\appsettings.json",
+              "RelativeToolTip": "JHGF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-23T19:13:02.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "JHGF\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "JHGF\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:11:56.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "hoteldetails.js",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hoteldetails.js",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\js\\hoteldetails.js",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hoteldetails.js",
+              "RelativeToolTip": "JHGF\\wwwroot\\js\\hoteldetails.js",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwG8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-23T18:59:56.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T18:59:07.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EditTour.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditTour.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Admin\\EditTour.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditTour.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Admin\\EditTour.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T18:20:52.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HotelDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\HotelDetails.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\HotelDetails.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\HotelDetails.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\HotelDetails.cshtml",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T17:22:53.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Hotel.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Hotel.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Booking\\Hotel.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Booking\\Hotel.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Booking\\Hotel.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T17:19:20.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ViewHotels.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\ViewHotels.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Admin\\ViewHotels.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\ViewHotels.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Admin\\ViewHotels.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T17:12:11.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EditHotel.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditHotel.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Admin\\EditHotel.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\EditHotel.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Admin\\EditHotel.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAADwv18AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T17:08:13.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AddHotel.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\AddHotel.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Admin\\AddHotel.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Admin\\AddHotel.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Admin\\AddHotel.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T17:08:10.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "JHGF\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "JHGF\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAIwCMCAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T17:06:50.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "JHGF\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "JHGF\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAwwPcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T17:05:37.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BookingHistory.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\BookingHistory.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\user\\BookingHistory.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\BookingHistory.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\user\\BookingHistory.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T16:14:06.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T16:04:20.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AddTestimonial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\AddTestimonial.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Home\\AddTestimonial.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\AddTestimonial.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Home\\AddTestimonial.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T16:04:16.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SmtpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\SmtpSettings.cs",
+              "RelativeDocumentMoniker": "JHGF\\Models\\SmtpSettings.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Models\\SmtpSettings.cs",
+              "RelativeToolTip": "JHGF\\Models\\SmtpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T15:41:01.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\Profile.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\user\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\Profile.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\user\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T15:30:27.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\login.js",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\js\\login.js",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\login.js",
+              "RelativeToolTip": "JHGF\\wwwroot\\js\\login.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-23T15:29:16.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "userLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\userLayout.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Shared\\userLayout.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Shared\\userLayout.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Shared\\userLayout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T15:28:31.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "JHGF\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Controllers\\UserController.cs",
+              "RelativeToolTip": "JHGF\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAswOYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T15:26:41.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\Login.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\user\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\user\\Login.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\user\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T15:26:28.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "footer.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\footer.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\footer.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\footer.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\footer.css",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAowNcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-23T12:30:51.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "navbar.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\navbar.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\navbar.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\navbar.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\navbar.css",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-23T12:30:26.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "packagedetails.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\packagedetails.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\packagedetails.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\packagedetails.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\packagedetails.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-23T12:30:25.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "aboutus.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\aboutus.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Home\\aboutus.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\aboutus.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Home\\aboutus.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T12:25:31.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "contactus.cshtml",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\contactus.cshtml",
+              "RelativeDocumentMoniker": "JHGF\\Views\\Home\\contactus.cshtml",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\Views\\Home\\contactus.cshtml",
+              "RelativeToolTip": "JHGF\\Views\\Home\\contactus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T12:25:30.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "aboutus.css",
+              "DocumentMoniker": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\aboutus.css",
+              "RelativeDocumentMoniker": "JHGF\\wwwroot\\css\\aboutus.css",
+              "ToolTip": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\aboutus.css",
+              "RelativeToolTip": "JHGF\\wwwroot\\css\\aboutus.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAtwEMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-23T12:22:32.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

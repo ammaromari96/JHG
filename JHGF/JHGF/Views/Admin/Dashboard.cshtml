@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="content-header">
+    <div>
+        <h1 class="content-title">Admin Dashboard</h1>
+        <p class="content-subtitle">Welcome back, Admin! Here's an overview of your system.</p>
+    </div>
+</div>
+
+<!-- Dashboard Cards -->
+<div class="dashboard-cards">
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-hotel"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">Total Hotels</div>
+            <div class="card-value">24</div>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-route"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">Total Tours</div>
+            <div class="card-value">18</div>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-suitcase"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">Total Packages</div>
+            <div class="card-value">12</div>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">Total Users</div>
+            <div class="card-value">156</div>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">New Messages</div>
+            <div class="card-value">5</div>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <div class="card-icon">
+            <i class="fas fa-calendar-check"></i>
+        </div>
+        <div class="card-content">
+            <div class="card-title">Bookings Today</div>
+            <div class="card-value">8</div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Activity -->
+<div class="content-header">
+    <h2 class="content-title">Recent Activity</h2>
+</div>
+
+<div class="data-table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Activity</th>
+                <th>User</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10 Nov 2023, 09:15</td>
+                <td>New hotel added</td>
+                <td>Admin</td>
+                <td>Petra Marriott Hotel</td>
+            </tr>
+            <tr>
+                <td>9 Nov 2023, 14:30</td>
+                <td>Tour updated</td>
+                <td>Admin</td>
+                <td>Wadi Rum Adventure</td>
+            </tr>
+            <tr>
+                <td>8 Nov 2023, 11:45</td>
+                <td>New booking</td>
+                <td>User: john_doe</td>
+                <td>Dead Sea Package</td>
+            </tr>
+            <tr>
+                <td>7 Nov 2023, 16:20</td>
+                <td>New user registered</td>
+                <td>sarah_smith</td>
+                <td>sarah@example.com</td>
+            </tr>
+            <tr>
+                <td>6 Nov 2023, 10:05</td>
+                <td>Package deleted</td>
+                <td>Admin</td>
+                <td>Amman City Tour</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

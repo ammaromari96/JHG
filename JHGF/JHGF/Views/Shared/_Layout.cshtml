@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Jordan Hidden Gems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link href="~/css/hoteldetails.css" rel="stylesheet" />
+
+
+
+    @RenderSection("Styles", required: false)
+
+    @RenderSection("Scripts", required: false)
+    <style>
+        .jnav-login-btn {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="jnav-bar">
+        <div class="jnav-main">
+            <div class="jnav-logo">
+                <div class="jnav-logo-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="jnav-logo-text">Jordan Hidden Gems</div>
+            </div>
+            <div class="jnav-mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="jnav-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Booking" asp-action="Hotel">Hotels</a>
+            <a asp-controller="Booking" asp-action="Tours">Tour</a>
+            <a asp-controller="Booking" asp-action="Packages">Packages</a>
+            <a asp-controller="Home" asp-action="AboutUs">About Us</a>
+            <a asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+        </div>
+
+        <div class="jnav-auth">
+            @if (Context.Session.GetString("UserName") == null)
+            {
+                <a asp-controller="User" asp-action="Login" class="jnav-login-btn btn">Login</a>
+            }
+            else
+            {
+                <div class="jnav-profile" style="display: flex; align-items: center; gap: 10px;">
+                    <a asp-controller="User" asp-action="Dashboard" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px;">
+                        <img src="@Context.Session.GetString("ProfilePic")" alt="Profile" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;" />
+                        <span>@Context.Session.GetString("UserName")</span>
+                    </a>
+
+                    <!-- Logout Icon -->
+                    <a asp-controller="User" asp-action="Logout" title="Logout" style="color: #dc3545;">
+                        <i class="fas fa-sign-out-alt" style="font-size: 20px;"></i>
+                    </a>
+                </div>
+            }
+        </div>
+    </nav>
+
+
+
+
+    <!-- renderbody -->
+        @RenderBody()
+
+
+    <footer class="jhg-footer">
+        <!-- <div class="jhg-footer-wave"></div> -->
+
+        <div class="jhg-footer-container">
+            <!-- Brand Column -->
+            <div class="jhg-footer-brand">
+                <div class="jhg-logo">
+                    <div class="jhg-logo-symbol">
+                        <div class="jhg-logo-arch"></div>
+                        <div class="jhg-logo-dunes">
+                            <div class="jhg-dune"></div>
+                            <div class="jhg-dune"></div>
+                            <div class="jhg-dune"></div>
+                        </div>
+                        <div class="jhg-logo-star">✧</div>
+                    </div>
+                    <div class="jhg-logo-text">
+                        <span class="jhg-logo-j">J</span>
+                        <span class="jhg-logo-h">H</span>
+                        <span class="jhg-logo-g">G</span>
+                    </div>
+                </div>
+                <p class="jhg-brand-tagline">Discover Jordan's Best Kept Secrets</p>
+
+                <div class="jhg-social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="jhg-footer-section">
+                <h3 class="jhg-section-title">Explore</h3>
+                <ul class="jhg-footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About JHG</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Tours</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Travel Guides</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Destinations -->
+            <div class="jhg-footer-section">
+                <h3 class="jhg-section-title">Hidden Gems</h3>
+                <ul class="jhg-footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Wadi Rum</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Dana Biosphere</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ajloun Forest</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Little Petra</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Dead Sea Panorama</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="jhg-footer-section">
+                <h3 class="jhg-section-title">Get Updates</h3>
+                <p class="jhg-newsletter-desc">Subscribe for exclusive Jordan travel tips</p>
+                <form class="jhg-newsletter-form">
+                    <div class="jhg-input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="jhg-submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="jhg-payment-methods">
+                    <p>We accept:</p>
+                    <div class="jhg-payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jhg-footer-bottom">
+            <div class="jhg-copyright">
+                &copy; 2023 Jordan Hidden Gems. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script> 
+               // Mobile menu toggle 
+         document.querySelector('.mobile-menu-btn').addEventListener('click', function () { 
+             document.querySelector('.nav-links').classList.toggle('active'); 
+             document.querySelector('.nav-auth').classList.toggle('active'); 
+         }); 
+
+     
+      
+     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>

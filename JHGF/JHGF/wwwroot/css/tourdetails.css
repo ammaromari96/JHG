@@ -1,0 +1,472 @@
+﻿:root {
+    --primary-color: #1ec6b6;
+    --primary-dark: #18a89a;
+    --secondary-color: #ff4a52;
+    --dark-color: #040e27;
+    --light-color: #f5f7fa;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 32px;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Image Slider */
+.tour-slider {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+    .swiper-button-next:hover, .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 20px;
+    }
+
+.swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+    opacity: 1;
+}
+
+/* Tour Info */
+.tour-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tour-description {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.tour-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.tour-price {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+    .tour-price span {
+        font-size: 16px;
+        color: #777;
+        font-weight: normal;
+    }
+
+.tour-text {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.tour-highlights {
+    margin-top: 30px;
+}
+
+.highlights-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.highlights-list {
+    list-style-type: none;
+}
+
+.highlight-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .highlight-item i {
+        margin-right: 10px;
+        color: var(--primary-color);
+    }
+
+/* Booking Section */
+.booking-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    height: fit-content;
+}
+
+.booking-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.booking-form-group {
+    margin-bottom: 20px;
+}
+
+.booking-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.booking-input, .booking-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+    .booking-input:focus, .booking-select:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 2px rgba(30, 198, 182, 0.2);
+    }
+
+.booking-form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.booking-form-col {
+    flex: 1;
+}
+
+/* Itinerary Section */
+.itinerary-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.itinerary-item {
+    display: flex;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+    .itinerary-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+.itinerary-time {
+    flex-shrink: 0;
+    width: 80px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.itinerary-content {
+    flex: 1;
+}
+
+.itinerary-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+}
+
+.itinerary-description {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Payment Section */
+.payment-section {
+    margin-top: 30px;
+}
+
+.payment-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+    .payment-method i {
+        font-size: 24px;
+        margin-right: 15px;
+        color: #555;
+    }
+
+    .payment-method.active {
+        border: 1px solid var(--primary-color);
+        background-color: rgba(30, 198, 182, 0.05);
+    }
+
+        .payment-method.active i {
+            color: var(--primary-color);
+        }
+
+.payment-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.book-now-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+    .book-now-btn:hover {
+        background-color: var(--primary-dark);
+    }
+
+/* Reviews Section */
+.reviews-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.review-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+    .review-item:last-child {
+        border-bottom: none;
+    }
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.review-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.review-stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.review-content {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Review Form */
+.review-form {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+    .form-input:focus, .form-textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 2px rgba(30, 198, 182, 0.2);
+    }
+
+.rating-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rating-star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+    .rating-star:hover,
+    .rating-star.active {
+        color: #ffc107;
+    }
+
+.submit-review-btn {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .submit-review-btn:hover {
+        background-color: var(--primary-dark);
+    }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .tour-info {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-slider {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-slider {
+        height: 300px;
+    }
+
+    .booking-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-title {
+        font-size: 28px;
+    }
+}

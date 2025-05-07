@@ -1,0 +1,465 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\JHGF.bundle.scp.css",
+      "PackagePath": "staticwebassets\\JHGF.f3cnk7byr6.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\3e049ed1-e7e5-4939-8a51-04bbd96dc571.jpg",
+      "PackagePath": "staticwebassets\\Images\\3e049ed1-e7e5-4939-8a51-04bbd96dc571.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Nr_Wx8.gif",
+      "PackagePath": "staticwebassets\\Images\\Nr_Wx8.gif"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Tours\\048a1a65-ba7e-4d5b-87b7-3ee81a01aa16_3f4cb198-32c4-4253-b520-62cc735dec8a.jpg",
+      "PackagePath": "staticwebassets\\Images\\Tours\\048a1a65-ba7e-4d5b-87b7-3ee81a01aa16_3f4cb198-32c4-4253-b520-62cc735dec8a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Tours\\28d558d8-a67e-40df-8876-d52ca8bf8a5b_image.png",
+      "PackagePath": "staticwebassets\\Images\\Tours\\28d558d8-a67e-40df-8876-d52ca8bf8a5b_image.png"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Tours\\6b0ea03e-0abf-4e9c-b81e-1f89fc8f1e45_image.png",
+      "PackagePath": "staticwebassets\\Images\\Tours\\6b0ea03e-0abf-4e9c-b81e-1f89fc8f1e45_image.png"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Tours\\a30fdc05-a004-4b12-8cdf-11f1f8b2c2d0_image.png",
+      "PackagePath": "staticwebassets\\Images\\Tours\\a30fdc05-a004-4b12-8cdf-11f1f8b2c2d0_image.png"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\Tours\\qq.jpg",
+      "PackagePath": "staticwebassets\\Images\\Tours\\qq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\packages\\63c14247-b891-4350-95b0-3f7f69389a09_image.png",
+      "PackagePath": "staticwebassets\\Images\\packages\\63c14247-b891-4350-95b0-3f7f69389a09_image.png"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\Images\\packages\\95dfbe59-463b-4a82-8b40-4b52d26a56a0_d38f2c46-da74-4dc5-b791-35663173b221.jpg",
+      "PackagePath": "staticwebassets\\Images\\packages\\95dfbe59-463b-4a82-8b40-4b52d26a56a0_d38f2c46-da74-4dc5-b791-35663173b221.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\ForgetPassword.css",
+      "PackagePath": "staticwebassets\\css\\ForgetPassword.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\HotelPayment.css",
+      "PackagePath": "staticwebassets\\css\\HotelPayment.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\aboutus.css",
+      "PackagePath": "staticwebassets\\css\\aboutus.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\contactus.css",
+      "PackagePath": "staticwebassets\\css\\contactus.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hotel.css",
+      "PackagePath": "staticwebassets\\css\\hotel.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\hoteldetails.css",
+      "PackagePath": "staticwebassets\\css\\hoteldetails.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\packagedetails.css",
+      "PackagePath": "staticwebassets\\css\\packagedetails.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\packages.css",
+      "PackagePath": "staticwebassets\\css\\packages.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\roomBooking.css",
+      "PackagePath": "staticwebassets\\css\\roomBooking.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\tour.css",
+      "PackagePath": "staticwebassets\\css\\tour.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\tourdetails.css",
+      "PackagePath": "staticwebassets\\css\\tourdetails.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\css\\userdashboard.css",
+      "PackagePath": "staticwebassets\\css\\userdashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\ForgetPassword.js",
+      "PackagePath": "staticwebassets\\js\\ForgetPassword.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\aboutus.js",
+      "PackagePath": "staticwebassets\\js\\aboutus.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\contactus.js",
+      "PackagePath": "staticwebassets\\js\\contactus.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hotel.js",
+      "PackagePath": "staticwebassets\\js\\hotel.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\hoteldetails.js",
+      "PackagePath": "staticwebassets\\js\\hoteldetails.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\packagedetails.js",
+      "PackagePath": "staticwebassets\\js\\packagedetails.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\packages.js",
+      "PackagePath": "staticwebassets\\js\\packages.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\roomBooking.js",
+      "PackagePath": "staticwebassets\\js\\roomBooking.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\tour.js",
+      "PackagePath": "staticwebassets\\js\\tour.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\tourdetails.js",
+      "PackagePath": "staticwebassets\\js\\tourdetails.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\js\\userdashboard.js",
+      "PackagePath": "staticwebassets\\js\\userdashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\8f004edb-bb92-4438-8b59-17a41960875a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8f004edb-bb92-4438-8b59-17a41960875a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\bf89276d-d247-4cb5-9049-b7a2158bd8a8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bf89276d-d247-4cb5-9049-b7a2158bd8a8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\29a055f5-9391-4d3d-8f33-0866d860fe9e_getlstd-property-photo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\29a055f5-9391-4d3d-8f33-0866d860fe9e_getlstd-property-photo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\5414696e-f611-4cc4-9433-10b3619acfef_dc020cac-7e39-4748-961a-dac7eb2a3df9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\5414696e-f611-4cc4-9433-10b3619acfef_dc020cac-7e39-4748-961a-dac7eb2a3df9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\939b58d9-db05-4069-9545-f0bebbab3a1e_768f3a04-3bd6-4624-965e-846dfe279f1d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\939b58d9-db05-4069-9545-f0bebbab3a1e_768f3a04-3bd6-4624-965e-846dfe279f1d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\b446c856-1e95-408c-8bf9-74f6ca7a298b.png",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\b446c856-1e95-408c-8bf9-74f6ca7a298b.png"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\bbaa2f24-0d95-42cc-9bc0-ffdf88a61b17_20200615-125712-largejpg.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\bbaa2f24-0d95-42cc-9bc0-ffdf88a61b17_20200615-125712-largejpg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\ec69ca4e-6d08-4ad2-85a0-138b588d4f03_485741260_9652226654815341_3997686525132433275_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\ec69ca4e-6d08-4ad2-85a0-138b588d4f03_485741260_9652226654815341_3997686525132433275_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ammar\\OneDrive\\Desktop\\New folder (8)\\JHGF\\JHGF\\wwwroot\\uploads\\hotels\\f9ce5384-e32a-4b94-8a5d-09b4c10f5360_768f3a04-3bd6-4624-965e-846dfe279f1d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\f9ce5384-e32a-4b94-8a5d-09b4c10f5360_768f3a04-3bd6-4624-965e-846dfe279f1d.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JHGF.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JHGF.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JHGF.props",
+      "PackagePath": "build\\JHGF.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JHGF.props",
+      "PackagePath": "buildMultiTargeting\\JHGF.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JHGF.props",
+      "PackagePath": "buildTransitive\\JHGF.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

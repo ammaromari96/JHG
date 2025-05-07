@@ -1,0 +1,135 @@
+﻿@model IEnumerable<JHGF.Models.Package>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/packages.css" />
+}
+
+@section Scripts {
+    <script src="~/js/packages.js"></script>
+}
+
+<div class="container">
+    <aside class="sidebar">
+        <form method="get" asp-controller="Booking" asp-action="PackageFilter">
+            <div class="filter-container">
+                <div class="filter-header">
+                    <h3 class="filter-title">Filter Packages</h3>
+                    <button class="reset-btn" type="submit" name="reset" value="true">Reset All</button>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Search</h4>
+                    <input type="text" class="filter-input" name="search" placeholder="Package name or keyword" value="@ViewBag.Search" />
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Price Range</h4>
+                    <div class="price-range-container">
+                        <span>
+                            Max Price:
+                            <span id="price-display" class="price-range-value">
+                                $@ViewBag.MaxPrice ?? 1000
+                            </span>
+                        </span>
+                        <input type="range" name="maxPrice" min="200" max="3000" value="@ViewBag.MaxPrice ?? 1000" class="price-slider" id="price-slider"
+                               oninput="document.getElementById('price-display').innerText = '$' + this.value;" />
+                        <div class="price-labels">
+                            <span>$200</span><span>$3000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Duration</h4>
+                    <div class="checkbox-group">
+                        @{
+                            var selectedDurations = ViewBag.Durations as List<int> ?? new List<int>();
+                        }
+                        @for (int i = 1; i <= 7; i++)
+                        {
+                            <label>
+                                <input type="checkbox" name="durations" value="@i" @(selectedDurations.Contains(i) ? "checked" : "") /> @i Days
+                            </label>
+                        }
+                    </div>
+                </div>
+
+                <button class="apply-btn" type="submit"><i class="fas fa-filter"></i> Apply Filters</button>
+            </div>
+        </form>
+
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3 class="filter-title">Custom Package</h3>
+            </div>
+            <p>Can't find what you're looking for? Request a custom package tailored for you.</p>
+            <button class="apply-btn" style="background-color: var(--secondary-color);">
+                <i class="fas fa-pencil-alt"></i> Request Custom Package
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Jordan Vacation Packages</h1>
+            <p class="page-subtitle">All-inclusive travel packages for the perfect Jordanian adventure</p>
+        </div>
+
+        <div class="results-count">Showing @Model.Count() packages</div>
+
+        <div class="package-grid">
+            @foreach (var package in Model)
+            {
+                <div class="package-card">
+                    <!-- Wishlist Form -->
+                    <form asp-action="AddToWishlist" asp-controller="User" method="post">
+                        <input type="hidden" name="PackageId" value="@package.Id" />
+                        <button type="submit" class="wishlist-btn" title="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </form>
+
+
+
+
+                    <div class="package-image" style="background-image: url('@package.Image1');">
+                        <div class="package-badge">BEST VALUE</div>
+                        <div class="package-rating"><i class="fas fa-star"></i> 4.9</div>
+                    </div>
+
+                    <div class="package-content">
+                        <h3 class="package-name">@package.PackageName</h3>
+                        <div class="package-destinations"><i class="fas fa-map-marker-alt"></i> @package.Location</div>
+                        <div class="package-duration"><i class="fas fa-clock"></i> @package.DurationDays Days</div>
+                        <div class="package-price">$@package.Price <span>per person</span></div>
+                        <p class="package-description">@package.SmallDescription</p>
+                        <div class="package-includes">
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-bus"></i> Transfers</span>
+                            <span><i class="fas fa-user-tie"></i> Guided Tours</span>
+                        </div>
+
+                        <div class="package-actions">
+                            <a asp-controller="Booking" asp-action="PackagesDetails" asp-route-id="@package.Id" class="package-btn">
+                                <i class="fas fa-calendar-check"></i> View Details
+                            </a>
+
+                         
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="pagination">
+            <div class="page-item"><i class="fas fa-chevron-left"></i></div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </main>
+</div>

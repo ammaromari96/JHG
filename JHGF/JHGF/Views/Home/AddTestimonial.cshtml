@@ -1,0 +1,211 @@
+﻿@model JHGF.Models.Testimonial
+<style>
+    :root {
+        --primary-color: #1ec6b6;
+        --primary-dark: #18a89a;
+        --sidebar-width: 280px;
+        --transition-speed: 0.3s;
+        --danger-color: #f44336;
+        --warning-color: #ff9500;
+        --success-color: #4CAF50;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    .testimonial-header {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonial-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-dark);
+    }
+
+    .testimonial-nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    .testimonial-nav a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: color var(--transition-speed);
+    }
+
+        .testimonial-nav a:hover {
+            color: var(--primary-color);
+        }
+
+    .testimonial-menu-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #555;
+        text-decoration: none;
+        transition: color var(--transition-speed);
+    }
+
+        .testimonial-menu-item:hover {
+            color: var(--primary-color);
+        }
+
+    .testimonial-form-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+        .testimonial-form-container h2 {
+            color: var(--primary-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+    .testimonial-form-description {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #555;
+    }
+
+    .testimonial-form-wrapper {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-form-group {
+        margin-bottom: 1.5rem;
+    }
+
+        .testimonial-form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .testimonial-form-group input[type="text"],
+        .testimonial-form-group input[type="number"],
+        .testimonial-form-group select,
+        .testimonial-form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color var(--transition-speed);
+        }
+
+        .testimonial-form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+            .testimonial-form-group input:focus,
+            .testimonial-form-group select:focus,
+            .testimonial-form-group textarea:focus {
+                outline: none;
+                border-color: var(--primary-color);
+                box-shadow: 0 0 0 2px rgba(30, 198, 182, 0.2);
+            }
+
+    .testimonial-submit-btn {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color var(--transition-speed);
+    }
+
+        .testimonial-submit-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+    .testimonial-validation-summary {
+        color: var(--danger-color);
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        background-color: #f8d7da;
+        border-radius: 4px;
+    }
+
+    .testimonial-field-validation-error {
+        color: var(--danger-color);
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+    }
+
+</style>
+
+
+<section class="testimonial-form-container container py-5">
+    <h2 class="text-center mb-3">Share Your Experience</h2>
+    <p class="testimonial-form-description text-center mb-4">
+        We'd love to hear your feedback! Please share your experience with us.
+    </p>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success text-center">@TempData["Success"]</div>
+    }
+
+    <form asp-action="AddTestimonial" asp-controller="Home" method="post" class="testimonial-form-wrapper mx-auto" style="max-width: 100%">
+        <div class="testimonial-form-group mb-3">
+            <label asp-for="UserName" class="form-label">Your Name*</label>
+            <input asp-for="UserName" class="form-control" required />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+
+        <div class="testimonial-form-group mb-3">
+            <label asp-for="Message" class="form-label">Your Testimonial*</label>
+            <textarea asp-for="Message" rows="5" class="form-control" required></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+
+        <div class="testimonial-form-group mb-3">
+            <label asp-for="Rating" class="form-label">Rating*</label>
+            <select asp-for="Rating" class="form-control" required>
+                <option value="">Select rating</option>
+                <option value="5">★★★★★ (5 stars)</option>
+                <option value="4">★★★★☆ (4 stars)</option>
+                <option value="3">★★★☆☆ (3 stars)</option>
+                <option value="2">★★☆☆☆ (2 stars)</option>
+                <option value="1">★☆☆☆☆ (1 star)</option>
+            </select>
+            <span asp-validation-for="Rating" class="text-danger"></span>
+        </div>
+
+        <div class="testimonial-form-group mb-4">
+            <label asp-for="Location" class="form-label">Your Location</label>
+            <input asp-for="Location" class="form-control" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+
+        <div class="form-actions text-center">
+            <button type="submit" class="testimonial-submit-btn px-4 btn btn-primary">Submit Testimonial</button>
+        </div>
+    </form>
+</section>

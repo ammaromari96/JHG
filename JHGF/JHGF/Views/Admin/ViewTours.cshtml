@@ -1,0 +1,68 @@
+﻿@model List<JHGF.Models.Tour>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "View Tours";
+}
+
+<div class="content-header d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="content-title">Tour Management</h1>
+        <p class="content-subtitle">View and manage all tours in the system</p>
+    </div>
+    <a asp-action="AddTour" asp-controller="Admin" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Add Tour
+    </a>
+</div>
+
+<!-- Alerts -->
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <i class="fas fa-check-circle"></i> @TempData["Success"]
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        <i class="fas fa-times-circle"></i> @TempData["Error"]
+    </div>
+}
+
+<!-- Tour Table -->
+<div class="data-table-container">
+    <table class="data-table table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Tour Name</th>
+                <th>Location</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tour in Model)
+            {
+                <tr>
+                    <td>@tour.Id</td>
+                    <td>@tour.TourName</td>
+                    <td>@tour.Location</td>
+                    <td>@tour.DurationDays</td>
+                    <td>$@tour.Price</td>
+                    <td>
+                        <a asp-action="EditTour" asp-controller="Admin" asp-route-id="@tour.Id" class="btn btn-secondary" style="padding: 5px 8px;">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <form asp-action="DeleteTour" asp-controller="Admin" asp-route-id="@tour.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this tour?');">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
